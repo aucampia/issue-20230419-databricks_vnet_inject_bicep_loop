@@ -1,0 +1,1925 @@
+[
+  {
+    "authorization": {
+      "action": "Microsoft.Network/networkIntentPolicies/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4"
+    },
+    "caller": "c024d554-2463-4c4b-ae69-d7298117903e",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "E2ZgYHif6GrYJut7Zfn99udPjHTTAA==",
+      "appid": "2cf9eb86-36b5-49dc-86ae-9a63135dfa8c",
+      "appidacr": "2",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681987912",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "c024d554-2463-4c4b-ae69-d7298117903e",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "c024d554-2463-4c4b-ae69-d7298117903e",
+      "iat": "1681901212",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "nbf": "1681901212",
+      "rh": "0.AAAAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLAAA.",
+      "uti": "sbLSW-GYPky14VHcfOgNAA",
+      "ver": "1.0",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "470d4991-2093-4980-b2e7-079c6c386fa6",
+    "description": "",
+    "eventDataId": "001b7628-f36a-4968-9080-3bc70f52a057",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:02:05.480225+00:00",
+    "httpRequest": {
+      "clientIpAddress": "52.143.194.11",
+      "clientRequestId": "b6de3977-374e-450b-8dd5-5c9f84fe18a4",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/events/001b7628-f36a-4968-9080-3bc70f52a057/ticks/638175349254802255",
+    "level": "Informational",
+    "operationId": "57fc8c0b-782b-4192-b0cb-002868165896",
+    "operationName": {
+      "localizedValue": "Create or Update Network Intent Policy",
+      "value": "Microsoft.Network/networkIntentPolicies/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/networkIntentPolicies/write",
+      "responseBody": "{\"name\":\"adb-westeurope-19663d7cc038f8e437af5eb4\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4\",\"etag\":\"W/\\\"52feb313-0a30-43cb-8526-54867b1e32a9\\\"\",\"type\":\"Microsoft.Network/networkIntentPolicies\",\"location\":\"westeurope\",\"properties\":{\"provisioningState\":\"Succeeded\",\"resourceGuid\":\"75a3dc4d-8dcc-427d-ba7f-a6c6773cc48e\",\"securityRules\":[{\"name\":\"databricks-worker-to-worker-inbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-worker-inbound\",\"etag\":\"W/\\\"52feb313-0a30-43cb-8526-54867b1e32a9\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"*\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-databricks-webapp\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-databricks-webapp\",\"etag\":\"W/\\\"52feb313-0a30-43cb-8526-54867b1e32a9\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Databricks Webapp.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"443\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"AzureDatabricks\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-sql\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-sql\",\"etag\":\"W/\\\"52feb313-0a30-43cb-8526-54867b1e32a9\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Azure SQL services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"3306\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"Sql\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-storage\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-storage\",\"etag\":\"W/\\\"52feb313-0a30-43cb-8526-54867b1e32a9\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Azure Storage services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"443\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"Storage\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-worker-outbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-worker-outbound\",\"etag\":\"W/\\\"52feb313-0a30-43cb-8526-54867b1e32a9\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"*\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-eventhub\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-eventhub\",\"etag\":\"W/\\\"52feb313-0a30-43cb-8526-54867b1e32a9\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker communication with Azure Eventhub services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"9093\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"EventHub\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-control-plane-to-worker-ssh\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-control-plane-to-worker-ssh\",\"etag\":\"W/\\\"52feb313-0a30-43cb-8526-54867b1e32a9\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for Databricks control plane management of worker nodes.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"22\"],\"sourceAddressPrefixes\":[\"AzureDatabricks\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-control-plane-to-worker-proxy\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-control-plane-to-worker-proxy\",\"etag\":\"W/\\\"52feb313-0a30-43cb-8526-54867b1e32a9\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for Databricks control plane communication with worker nodes.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"5557\"],\"sourceAddressPrefixes\":[\"AzureDatabricks\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"}],\"routes\":[],\"serviceEndpointPolicyDefinitions\":[],\"allowPrivateAddressSpaceOnly\":false,\"disableServiceEndpoints\":false,\"allowedServiceEndpoints\":[],\"serviceEndpointsAllowedForPolicies\":[],\"requireExactRouteMatch\":false,\"disableNatGateway\":false,\"disableDnsExfilTags\":false,\"ownerId\":\"d9327919-6775-4843-9037-3fb0fb0473cb\"}}",
+      "serviceRequestId": null,
+      "statusCode": "Created"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/networkIntentPolicies",
+      "value": "Microsoft.Network/networkIntentPolicies"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "Created (HTTP Status Code: 201)",
+      "value": "Created"
+    },
+    "submissionTimestamp": "2023-04-19T21:03:46+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/networkIntentPolicies/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4"
+    },
+    "caller": "c024d554-2463-4c4b-ae69-d7298117903e",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "E2ZgYHif6GrYJut7Zfn99udPjHTTAA==",
+      "appid": "2cf9eb86-36b5-49dc-86ae-9a63135dfa8c",
+      "appidacr": "2",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681987912",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "c024d554-2463-4c4b-ae69-d7298117903e",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "c024d554-2463-4c4b-ae69-d7298117903e",
+      "iat": "1681901212",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "nbf": "1681901212",
+      "rh": "0.AAAAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLAAA.",
+      "uti": "sbLSW-GYPky14VHcfOgNAA",
+      "ver": "1.0",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "470d4991-2093-4980-b2e7-079c6c386fa6",
+    "description": "",
+    "eventDataId": "d84fae3e-958c-460d-b15e-4a61b3656a32",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:02:04.870846+00:00",
+    "httpRequest": {
+      "clientIpAddress": "52.143.194.11",
+      "clientRequestId": "b6de3977-374e-450b-8dd5-5c9f84fe18a4",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/events/d84fae3e-958c-460d-b15e-4a61b3656a32/ticks/638175349248708469",
+    "level": "Informational",
+    "operationId": "57fc8c0b-782b-4192-b0cb-002868165896",
+    "operationName": {
+      "localizedValue": "Create or Update Network Intent Policy",
+      "value": "Microsoft.Network/networkIntentPolicies/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/networkIntentPolicies/write",
+      "requestbody": "{\"name\":\"adb-westeurope-19663d7cc038f8e437af5eb4\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4\",\"type\":\"Microsoft.Network/networkIntentPolicies\",\"location\":\"westeurope\",\"properties\":{\"provisioningState\":\"Succeeded\",\"resourceGuid\":\"d8e3c37e-98c9-4c2a-ae87-82097c9cd951\",\"securityRules\":[{\"name\":\"databricks-worker-to-worker-inbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-worker-inbound\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"*\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-databricks-webapp\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-databricks-webapp\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Databricks Webapp.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"443\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"AzureDatabricks\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-sql\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-sql\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Azure SQL services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"3306\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"Sql\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-storage\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-storage\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Azure Storage services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"443\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"Storage\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-worker-outbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-worker-outbound\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"*\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-eventhub\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-worker-to-eventhub\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker communication with Azure Eventhub services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"9093\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"EventHub\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-control-plane-to-worker-ssh\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-control-plane-to-worker-ssh\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for Databricks control plane management of worker nodes.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"22\"],\"sourceAddressPrefixes\":[\"AzureDatabricks\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-control-plane-to-worker-proxy\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4/securityRules/databricks-control-plane-to-worker-proxy\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for Databricks control plane communication with worker nodes.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"5557\"],\"sourceAddressPrefixes\":[\"AzureDatabricks\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"}],\"routes\":[],\"serviceEndpointPolicyDefinitions\":[],\"allowPrivateAddressSpaceOnly\":false,\"disableServiceEndpoints\":false,\"allowedServiceEndpoints\":[],\"serviceEndpointsAllowedForPolicies\":[],\"requireExactRouteMatch\":false,\"disableNatGateway\":false,\"disableDnsExfilTags\":false,\"ownerId\":\"d9327919-6775-4843-9037-3fb0fb0473cb\"}}"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-19663d7cc038f8e437af5eb4",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/networkIntentPolicies",
+      "value": "Microsoft.Network/networkIntentPolicies"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:03:46+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/public-subnet"
+    },
+    "caller": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "E2ZgYDAUNW8KufzoncSajBPH5vfaAQA=",
+      "appid": "d9327919-6775-4843-9037-3fb0fb0473cb",
+      "appidacr": "2",
+      "aud": "https://management.azure.com/",
+      "exp": "1682024523",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+      "iat": "1681937823",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "nbf": "1681937823",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLAAA.",
+      "uti": "0au2fI1H_Ey7NlZxIcNYAA",
+      "ver": "1.0",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "470d4991-2093-4980-b2e7-079c6c386fa6",
+    "description": "",
+    "eventDataId": "3f8e82eb-d77c-49ad-937b-e17d8260b2ba",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:02:03.958567+00:00",
+    "httpRequest": {
+      "clientIpAddress": "51.136.72.178",
+      "clientRequestId": "b6de3977-374e-450b-8dd5-5c9f84fe18a4",
+      "method": "POST",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/public-subnet/events/3f8e82eb-d77c-49ad-937b-e17d8260b2ba/ticks/638175349239585676",
+    "level": "Informational",
+    "operationId": "470d4991-2093-4980-b2e7-079c6c386fa6",
+    "operationName": {
+      "localizedValue": "Prepares a subnet by applying necessary Network Policies",
+      "value": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/public-subnet",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action",
+      "serviceRequestId": null,
+      "statusCode": "Accepted"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/public-subnet",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/virtualNetworks/subnets",
+      "value": "Microsoft.Network/virtualNetworks/subnets"
+    },
+    "status": {
+      "localizedValue": "Accepted",
+      "value": "Accepted"
+    },
+    "subStatus": {
+      "localizedValue": "Accepted (HTTP Status Code: 202)",
+      "value": "Accepted"
+    },
+    "submissionTimestamp": "2023-04-19T21:03:59+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/public-subnet"
+    },
+    "caller": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "E2ZgYDAUNW8KufzoncSajBPH5vfaAQA=",
+      "appid": "d9327919-6775-4843-9037-3fb0fb0473cb",
+      "appidacr": "2",
+      "aud": "https://management.azure.com/",
+      "exp": "1682024523",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+      "iat": "1681937823",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "nbf": "1681937823",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLAAA.",
+      "uti": "0au2fI1H_Ey7NlZxIcNYAA",
+      "ver": "1.0",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "470d4991-2093-4980-b2e7-079c6c386fa6",
+    "description": "",
+    "eventDataId": "454ea90f-28fc-4221-b07d-c52564f01371",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:02:03.802314+00:00",
+    "httpRequest": {
+      "clientIpAddress": "51.136.72.178",
+      "clientRequestId": "b6de3977-374e-450b-8dd5-5c9f84fe18a4",
+      "method": "POST",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/public-subnet/events/454ea90f-28fc-4221-b07d-c52564f01371/ticks/638175349238023145",
+    "level": "Informational",
+    "operationId": "470d4991-2093-4980-b2e7-079c6c386fa6",
+    "operationName": {
+      "localizedValue": "Prepares a subnet by applying necessary Network Policies",
+      "value": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/public-subnet",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/public-subnet",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/virtualNetworks/subnets",
+      "value": "Microsoft.Network/virtualNetworks/subnets"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:03:59+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/networkIntentPolicies/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b"
+    },
+    "caller": "c024d554-2463-4c4b-ae69-d7298117903e",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "E2ZgYHif6GrYJut7Zfn99udPjHTTAA==",
+      "appid": "2cf9eb86-36b5-49dc-86ae-9a63135dfa8c",
+      "appidacr": "2",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681987912",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "c024d554-2463-4c4b-ae69-d7298117903e",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "c024d554-2463-4c4b-ae69-d7298117903e",
+      "iat": "1681901212",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "nbf": "1681901212",
+      "rh": "0.AAAAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLAAA.",
+      "uti": "sbLSW-GYPky14VHcfOgNAA",
+      "ver": "1.0",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "dda333ac-f796-48b2-85cc-2948529722b7",
+    "description": "",
+    "eventDataId": "b211b459-4a0a-4572-b8eb-5708c404f182",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:56.274051+00:00",
+    "httpRequest": {
+      "clientIpAddress": "52.143.194.11",
+      "clientRequestId": "e7dd0b29-7b26-4503-a107-6a1adbaddd90",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/events/b211b459-4a0a-4572-b8eb-5708c404f182/ticks/638175349162740518",
+    "level": "Informational",
+    "operationId": "82507255-48db-4ef7-b4ce-b232260e0159",
+    "operationName": {
+      "localizedValue": "Create or Update Network Intent Policy",
+      "value": "Microsoft.Network/networkIntentPolicies/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/networkIntentPolicies/write",
+      "responseBody": "{\"name\":\"adb-westeurope-f201d3f50e3387e4aa51bb3b\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b\",\"etag\":\"W/\\\"d9512d1a-f4af-4b73-9784-5c9d3f688f99\\\"\",\"type\":\"Microsoft.Network/networkIntentPolicies\",\"location\":\"westeurope\",\"properties\":{\"provisioningState\":\"Succeeded\",\"resourceGuid\":\"9a925e55-0ce1-42ff-83e1-777682dfe31b\",\"securityRules\":[{\"name\":\"databricks-worker-to-worker-inbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-worker-inbound\",\"etag\":\"W/\\\"d9512d1a-f4af-4b73-9784-5c9d3f688f99\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"*\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-databricks-webapp\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-databricks-webapp\",\"etag\":\"W/\\\"d9512d1a-f4af-4b73-9784-5c9d3f688f99\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Databricks Webapp.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"443\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"AzureDatabricks\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-sql\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-sql\",\"etag\":\"W/\\\"d9512d1a-f4af-4b73-9784-5c9d3f688f99\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Azure SQL services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"3306\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"Sql\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-storage\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-storage\",\"etag\":\"W/\\\"d9512d1a-f4af-4b73-9784-5c9d3f688f99\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Azure Storage services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"443\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"Storage\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-worker-outbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-worker-outbound\",\"etag\":\"W/\\\"d9512d1a-f4af-4b73-9784-5c9d3f688f99\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"*\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-eventhub\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-eventhub\",\"etag\":\"W/\\\"d9512d1a-f4af-4b73-9784-5c9d3f688f99\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker communication with Azure Eventhub services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"9093\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"EventHub\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-control-plane-to-worker-ssh\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-control-plane-to-worker-ssh\",\"etag\":\"W/\\\"d9512d1a-f4af-4b73-9784-5c9d3f688f99\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for Databricks control plane management of worker nodes.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"22\"],\"sourceAddressPrefixes\":[\"AzureDatabricks\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-control-plane-to-worker-proxy\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-control-plane-to-worker-proxy\",\"etag\":\"W/\\\"d9512d1a-f4af-4b73-9784-5c9d3f688f99\\\"\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for Databricks control plane communication with worker nodes.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"5557\"],\"sourceAddressPrefixes\":[\"AzureDatabricks\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"}],\"routes\":[],\"serviceEndpointPolicyDefinitions\":[],\"allowPrivateAddressSpaceOnly\":false,\"disableServiceEndpoints\":false,\"allowedServiceEndpoints\":[],\"serviceEndpointsAllowedForPolicies\":[],\"requireExactRouteMatch\":false,\"disableNatGateway\":false,\"disableDnsExfilTags\":false,\"ownerId\":\"d9327919-6775-4843-9037-3fb0fb0473cb\"}}",
+      "serviceRequestId": null,
+      "statusCode": "Created"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/networkIntentPolicies",
+      "value": "Microsoft.Network/networkIntentPolicies"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "Created (HTTP Status Code: 201)",
+      "value": "Created"
+    },
+    "submissionTimestamp": "2023-04-19T21:02:55+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/networkIntentPolicies/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b"
+    },
+    "caller": "c024d554-2463-4c4b-ae69-d7298117903e",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "E2ZgYHif6GrYJut7Zfn99udPjHTTAA==",
+      "appid": "2cf9eb86-36b5-49dc-86ae-9a63135dfa8c",
+      "appidacr": "2",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681987912",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "c024d554-2463-4c4b-ae69-d7298117903e",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "c024d554-2463-4c4b-ae69-d7298117903e",
+      "iat": "1681901212",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "nbf": "1681901212",
+      "rh": "0.AAAAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLAAA.",
+      "uti": "sbLSW-GYPky14VHcfOgNAA",
+      "ver": "1.0",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "dda333ac-f796-48b2-85cc-2948529722b7",
+    "description": "",
+    "eventDataId": "6235ba5d-b90e-4dfa-95e3-1317751d2688",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:55.852171+00:00",
+    "httpRequest": {
+      "clientIpAddress": "52.143.194.11",
+      "clientRequestId": "e7dd0b29-7b26-4503-a107-6a1adbaddd90",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/events/6235ba5d-b90e-4dfa-95e3-1317751d2688/ticks/638175349158521713",
+    "level": "Informational",
+    "operationId": "82507255-48db-4ef7-b4ce-b232260e0159",
+    "operationName": {
+      "localizedValue": "Create or Update Network Intent Policy",
+      "value": "Microsoft.Network/networkIntentPolicies/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/networkIntentPolicies/write",
+      "requestbody": "{\"name\":\"adb-westeurope-f201d3f50e3387e4aa51bb3b\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b\",\"type\":\"Microsoft.Network/networkIntentPolicies\",\"location\":\"westeurope\",\"properties\":{\"provisioningState\":\"Succeeded\",\"resourceGuid\":\"d583f70b-7001-41dd-9b50-8479dd263a8f\",\"securityRules\":[{\"name\":\"databricks-worker-to-worker-inbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-worker-inbound\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"*\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-databricks-webapp\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-databricks-webapp\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Databricks Webapp.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"443\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"AzureDatabricks\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-sql\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-sql\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Azure SQL services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"3306\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"Sql\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-storage\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-storage\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for workers communication with Azure Storage services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"443\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"Storage\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-worker-outbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-worker-outbound\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"*\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-worker-to-eventhub\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-worker-to-eventhub\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for worker communication with Azure Eventhub services.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Outbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"9093\"],\"sourceAddressPrefixes\":[\"VirtualNetwork\"],\"destinationAddressPrefixes\":[\"EventHub\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-control-plane-to-worker-ssh\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-control-plane-to-worker-ssh\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for Databricks control plane management of worker nodes.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"22\"],\"sourceAddressPrefixes\":[\"AzureDatabricks\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"},{\"name\":\"databricks-control-plane-to-worker-proxy\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b/securityRules/databricks-control-plane-to-worker-proxy\",\"properties\":{\"provisioningState\":\"Succeeded\",\"description\":\"Required for Databricks control plane communication with worker nodes.\",\"protocol\":\"tcp\",\"access\":\"Allow\",\"direction\":\"Inbound\",\"sourcePortRanges\":[\"*\"],\"destinationPortRanges\":[\"5557\"],\"sourceAddressPrefixes\":[\"AzureDatabricks\"],\"destinationAddressPrefixes\":[\"VirtualNetwork\"]},\"type\":\"Microsoft.Network/networkIntentPolicies/securityRules\"}],\"routes\":[],\"serviceEndpointPolicyDefinitions\":[],\"allowPrivateAddressSpaceOnly\":false,\"disableServiceEndpoints\":false,\"allowedServiceEndpoints\":[],\"serviceEndpointsAllowedForPolicies\":[],\"requireExactRouteMatch\":false,\"disableNatGateway\":false,\"disableDnsExfilTags\":false,\"ownerId\":\"d9327919-6775-4843-9037-3fb0fb0473cb\"}}"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkIntentPolicies/adb-westeurope-f201d3f50e3387e4aa51bb3b",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/networkIntentPolicies",
+      "value": "Microsoft.Network/networkIntentPolicies"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:02:55+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/private-subnet"
+    },
+    "caller": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "E2ZgYDimLpH0M+yA996g3mfTQyX7AA==",
+      "appid": "d9327919-6775-4843-9037-3fb0fb0473cb",
+      "appidacr": "2",
+      "aud": "https://management.azure.com/",
+      "exp": "1682024508",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+      "iat": "1681937808",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "nbf": "1681937808",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLAAA.",
+      "uti": "I1h1J7jLq0Cw01g0xPFaAA",
+      "ver": "1.0",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "dda333ac-f796-48b2-85cc-2948529722b7",
+    "description": "",
+    "eventDataId": "8439f1a4-646f-46d9-b033-08f54650855a",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:53.391540+00:00",
+    "httpRequest": {
+      "clientIpAddress": "51.136.72.178",
+      "clientRequestId": "e7dd0b29-7b26-4503-a107-6a1adbaddd90",
+      "method": "POST",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/private-subnet/events/8439f1a4-646f-46d9-b033-08f54650855a/ticks/638175349133915409",
+    "level": "Informational",
+    "operationId": "dda333ac-f796-48b2-85cc-2948529722b7",
+    "operationName": {
+      "localizedValue": "Prepares a subnet by applying necessary Network Policies",
+      "value": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/private-subnet",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action",
+      "serviceRequestId": null,
+      "statusCode": "Accepted"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/private-subnet",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/virtualNetworks/subnets",
+      "value": "Microsoft.Network/virtualNetworks/subnets"
+    },
+    "status": {
+      "localizedValue": "Accepted",
+      "value": "Accepted"
+    },
+    "subStatus": {
+      "localizedValue": "Accepted (HTTP Status Code: 202)",
+      "value": "Accepted"
+    },
+    "submissionTimestamp": "2023-04-19T21:03:18+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/private-subnet"
+    },
+    "caller": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "E2ZgYDimLpH0M+yA996g3mfTQyX7AA==",
+      "appid": "d9327919-6775-4843-9037-3fb0fb0473cb",
+      "appidacr": "2",
+      "aud": "https://management.azure.com/",
+      "exp": "1682024508",
+      "http://schemas.microsoft.com/identity/claims/identityprovider": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "753baff7-01b4-4872-86a2-75aa40d8eb57",
+      "iat": "1681937808",
+      "idtyp": "app",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "nbf": "1681937808",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLAAA.",
+      "uti": "I1h1J7jLq0Cw01g0xPFaAA",
+      "ver": "1.0",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "dda333ac-f796-48b2-85cc-2948529722b7",
+    "description": "",
+    "eventDataId": "4250194e-de27-41d9-a182-f736c4486e89",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:53.250916+00:00",
+    "httpRequest": {
+      "clientIpAddress": "51.136.72.178",
+      "clientRequestId": "e7dd0b29-7b26-4503-a107-6a1adbaddd90",
+      "method": "POST",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/private-subnet/events/4250194e-de27-41d9-a182-f736c4486e89/ticks/638175349132509160",
+    "level": "Informational",
+    "operationId": "dda333ac-f796-48b2-85cc-2948529722b7",
+    "operationName": {
+      "localizedValue": "Prepares a subnet by applying necessary Network Policies",
+      "value": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/private-subnet",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/virtualNetworks/subnets/PrepareNetworkPolicies/action"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/subnets/private-subnet",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/virtualNetworks/subnets",
+      "value": "Microsoft.Network/virtualNetworks/subnets"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:03:18+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Databricks/workspaces/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Debug",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "correlationid": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+      "exp": "1681952478",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "90f91169-04d3-4476-9794-4438f28c769f",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:50.690902+00:00",
+    "httpRequest": null,
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi/events/90f91169-04d3-4476-9794-4438f28c769f/ticks/638175349106909021",
+    "level": "Informational",
+    "operationId": "345bee17-a76a-4e8c-9c99-ea6dd2d8a004",
+    "operationName": {
+      "localizedValue": "Create Databricks Workspace",
+      "value": "Microsoft.Databricks/workspaces/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Databricks/workspaces/write",
+      "statusCode": "Accepted",
+      "statusMessage": "\"Resource provisioning is in progress.\""
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Databricks",
+      "value": "Microsoft.Databricks"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Databricks/workspaces",
+      "value": "Microsoft.Databricks/workspaces"
+    },
+    "status": {
+      "localizedValue": "Accepted",
+      "value": "Accepted"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:04:12+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Databricks/workspaces/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Debug",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "correlationid": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+      "exp": "1681952478",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "5c9d2750-52b8-4b5c-b65c-aafab2c4c3bc",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:35.273537+00:00",
+    "httpRequest": null,
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi/events/5c9d2750-52b8-4b5c-b65c-aafab2c4c3bc/ticks/638175348952735370",
+    "level": "Informational",
+    "operationId": "c2e4af8c-53b7-4530-80db-372d4ce9ca96",
+    "operationName": {
+      "localizedValue": "Create Databricks Workspace",
+      "value": "Microsoft.Databricks/workspaces/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Databricks/workspaces/write",
+      "statusCode": "Accepted",
+      "statusMessage": "\"Resource provisioning is in progress.\""
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Databricks",
+      "value": "Microsoft.Databricks"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Databricks/workspaces",
+      "value": "Microsoft.Databricks/workspaces"
+    },
+    "status": {
+      "localizedValue": "Accepted",
+      "value": "Accepted"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:03:52+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Databricks/workspaces/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "correlationid": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+      "exp": "1681952478",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "c80feb6d-1f48-4e03-8bbf-41cdd3dccd85",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:19.181462+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "63b766bc-3275-49ab-9e4f-7fa60038a925",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi/events/c80feb6d-1f48-4e03-8bbf-41cdd3dccd85/ticks/638175348791814624",
+    "level": "Informational",
+    "operationId": "70c93fdc-0005-48ff-8ea6-a690c1620846",
+    "operationName": {
+      "localizedValue": "Create Databricks Workspace",
+      "value": "Microsoft.Databricks/workspaces/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Databricks/workspaces/write",
+      "responseBody": "{\"properties\":{\"managedResourceGroupId\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/databricks-rg-dbws-zmmbsj-bmi-vidpgcrkylakc\",\"provisioningState\":\"Accepted\",\"authorizations\":[{\"principalId\":\"9a74af6f-d153-4348-988a-e2672920bee9\",\"roleDefinitionId\":\"8e3af657-a8ff-443c-a75c-2fe8c4bcb635\"}],\"createdBy\":{\"oid\":\"592c29b0-e2ed-4656-af38-76bead917dfd\",\"puid\":\"10032002746FA333\",\"applicationId\":\"04b07795-8ddb-461a-bbee-02f9e1bf7b46\"},\"updatedBy\":{\"oid\":\"592c29b0-e2ed-4656-af38-76bead917dfd\",\"puid\":\"10032002746FA333\",\"applicationId\":\"04b07795-8ddb-461a-bbee-02f9e1bf7b46\"},\"createdDateTime\":\"2023-04-19T21:01:18.2657111Z\"},\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi\",\"name\":\"dbws-zmmbsj-bmi\",\"type\":\"Microsoft.Databricks/workspaces\",\"sku\":{\"name\":\"premium\"},\"location\":\"westeurope\"}",
+      "serviceRequestId": null,
+      "statusCode": "Created"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Databricks",
+      "value": "Microsoft.Databricks"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Databricks/workspaces",
+      "value": "Microsoft.Databricks/workspaces"
+    },
+    "status": {
+      "localizedValue": "Accepted",
+      "value": "Accepted"
+    },
+    "subStatus": {
+      "localizedValue": "Created (HTTP Status Code: 201)",
+      "value": "Created"
+    },
+    "submissionTimestamp": "2023-04-19T21:03:09+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/virtualNetworks/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "763042a2-b336-4434-82f2-157e956a3aa4",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:18.542768+00:00",
+    "httpRequest": null,
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet/events/763042a2-b336-4434-82f2-157e956a3aa4/ticks/638175348785427684",
+    "level": "Informational",
+    "operationId": "c5360b57-75a7-4274-a883-1a65ebb04a7c",
+    "operationName": {
+      "localizedValue": "Create or Update Virtual Network",
+      "value": "Microsoft.Network/virtualNetworks/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/virtualNetworks/write"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/virtualNetworks",
+      "value": "Microsoft.Network/virtualNetworks"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:02:32+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Databricks/workspaces/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "6c3dcc29-12b9-491f-ba39-d627df221619",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:17.525123+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "63b766bc-3275-49ab-9e4f-7fa60038a925",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi/events/6c3dcc29-12b9-491f-ba39-d627df221619/ticks/638175348775251233",
+    "level": "Informational",
+    "operationId": "70c93fdc-0005-48ff-8ea6-a690c1620846",
+    "operationName": {
+      "localizedValue": "Create Databricks Workspace",
+      "value": "Microsoft.Databricks/workspaces/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Databricks/workspaces/write",
+      "requestbody": "{\"sku\":{\"name\":\"premium\"},\"location\":\"westeurope\",\"properties\":{\"managedResourceGroupId\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/databricks-rg-dbws-zmmbsj-bmi-vidpgcrkylakc\",\"parameters\":{\"customVirtualNetworkId\":{\"value\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet\"},\"customPublicSubnetName\":{\"value\":\"public-subnet\"},\"customPrivateSubnetName\":{\"value\":\"private-subnet\"},\"enableNoPublicIp\":{\"value\":false}}}}"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Databricks",
+      "value": "Microsoft.Databricks"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Databricks/workspaces",
+      "value": "Microsoft.Databricks/workspaces"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:03:09+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/networkSecurityGroups/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "df69fc12-c13c-443f-901d-85fbfb90a041",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:13.076593+00:00",
+    "httpRequest": null,
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/events/df69fc12-c13c-443f-901d-85fbfb90a041/ticks/638175348730765936",
+    "level": "Informational",
+    "operationId": "fee91d14-26c1-4f2e-9c48-c9ee05e2fadf",
+    "operationName": {
+      "localizedValue": "Create or Update Network Security Group",
+      "value": "Microsoft.Network/networkSecurityGroups/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/networkSecurityGroups/write"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/networkSecurityGroups",
+      "value": "Microsoft.Network/networkSecurityGroups"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:02:48+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/networkSecurityGroups/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "601d81b2-f6eb-418f-a93d-6aa307722eae",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:12.038869+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "665eef9b-54f3-45d5-87e8-a1ff482b2723",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/events/601d81b2-f6eb-418f-a93d-6aa307722eae/ticks/638175348720388693",
+    "level": "Informational",
+    "operationId": "fad03dcf-2458-4cc8-a7e2-91dc7b76314c",
+    "operationName": {
+      "localizedValue": "Create or Update Network Security Group",
+      "value": "Microsoft.Network/networkSecurityGroups/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/networkSecurityGroups/write",
+      "responseBody": "{\"name\":\"databricks-nsg\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups\",\"location\":\"westeurope\",\"properties\":{\"provisioningState\":\"Updating\",\"resourceGuid\":\"592e731b-68a0-452a-9dfb-a12488514507\",\"securityRules\":[{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-worker-inbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/securityRules/Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-worker-inbound\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/securityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"VirtualNetwork\",\"access\":\"Allow\",\"priority\":100,\"direction\":\"Inbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-databricks-webapp\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/securityRules/Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-databricks-webapp\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/securityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Required for workers communication with Databricks Webapp.\",\"protocol\":\"Tcp\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"443\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"AzureDatabricks\",\"access\":\"Allow\",\"priority\":100,\"direction\":\"Outbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-sql\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/securityRules/Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-sql\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/securityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Required for workers communication with Azure SQL services.\",\"protocol\":\"Tcp\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"3306\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"Sql\",\"access\":\"Allow\",\"priority\":101,\"direction\":\"Outbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-storage\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/securityRules/Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-storage\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/securityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Required for workers communication with Azure Storage services.\",\"protocol\":\"Tcp\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"443\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"Storage\",\"access\":\"Allow\",\"priority\":102,\"direction\":\"Outbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-worker-outbound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/securityRules/Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-worker-outbound\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/securityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"VirtualNetwork\",\"access\":\"Allow\",\"priority\":103,\"direction\":\"Outbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-eventhub\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/securityRules/Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-eventhub\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/securityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Required for worker communication with Azure Eventhub services.\",\"protocol\":\"Tcp\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"9093\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"EventHub\",\"access\":\"Allow\",\"priority\":104,\"direction\":\"Outbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}}],\"defaultSecurityRules\":[{\"name\":\"AllowVnetInBound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/defaultSecurityRules/AllowVnetInBound\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/defaultSecurityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Allow inbound traffic from all VMs in VNET\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"VirtualNetwork\",\"access\":\"Allow\",\"priority\":65000,\"direction\":\"Inbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"AllowAzureLoadBalancerInBound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/defaultSecurityRules/AllowAzureLoadBalancerInBound\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/defaultSecurityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Allow inbound traffic from azure load balancer\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"AzureLoadBalancer\",\"destinationAddressPrefix\":\"*\",\"access\":\"Allow\",\"priority\":65001,\"direction\":\"Inbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"DenyAllInBound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/defaultSecurityRules/DenyAllInBound\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/defaultSecurityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Deny all inbound traffic\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"*\",\"destinationAddressPrefix\":\"*\",\"access\":\"Deny\",\"priority\":65500,\"direction\":\"Inbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"AllowVnetOutBound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/defaultSecurityRules/AllowVnetOutBound\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/defaultSecurityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Allow outbound traffic from all VMs to all VMs in VNET\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"VirtualNetwork\",\"access\":\"Allow\",\"priority\":65000,\"direction\":\"Outbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"AllowInternetOutBound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/defaultSecurityRules/AllowInternetOutBound\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/defaultSecurityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Allow outbound traffic from all VMs to Internet\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"*\",\"destinationAddressPrefix\":\"Internet\",\"access\":\"Allow\",\"priority\":65001,\"direction\":\"Outbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}},{\"name\":\"DenyAllOutBound\",\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/defaultSecurityRules/DenyAllOutBound\",\"etag\":\"W/\\\"b18d6023-435a-4007-bb32-163fc107afec\\\"\",\"type\":\"Microsoft.Network/networkSecurityGroups/defaultSecurityRules\",\"properties\":{\"provisioningState\":\"Updating\",\"description\":\"Deny all outbound traffic\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"*\",\"destinationAddressPrefix\":\"*\",\"access\":\"Deny\",\"priority\":65500,\"direction\":\"Outbound\",\"sourcePortRanges\":[],\"destinationPortRanges\":[],\"sourceAddressPrefixes\":[],\"destinationAddressPrefixes\":[]}}]}}",
+      "serviceRequestId": null,
+      "statusCode": "Created"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/networkSecurityGroups",
+      "value": "Microsoft.Network/networkSecurityGroups"
+    },
+    "status": {
+      "localizedValue": "Accepted",
+      "value": "Accepted"
+    },
+    "subStatus": {
+      "localizedValue": "Created (HTTP Status Code: 201)",
+      "value": "Created"
+    },
+    "submissionTimestamp": "2023-04-19T21:04:30+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Network/networkSecurityGroups/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "cbc22d76-9274-4bf1-a917-703eb8b66e6f",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:10.616905+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "665eef9b-54f3-45d5-87e8-a1ff482b2723",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg/events/cbc22d76-9274-4bf1-a917-703eb8b66e6f/ticks/638175348706169051",
+    "level": "Informational",
+    "operationId": "fad03dcf-2458-4cc8-a7e2-91dc7b76314c",
+    "operationName": {
+      "localizedValue": "Create or Update Network Security Group",
+      "value": "Microsoft.Network/networkSecurityGroups/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Network/networkSecurityGroups/write",
+      "requestbody": "{\"location\":\"westeurope\",\"properties\":{\"securityRules\":[{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-worker-inbound\",\"properties\":{\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"VirtualNetwork\",\"access\":\"Allow\",\"priority\":100,\"direction\":\"Inbound\"}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-databricks-webapp\",\"properties\":{\"description\":\"Required for workers communication with Databricks Webapp.\",\"protocol\":\"Tcp\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"443\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"AzureDatabricks\",\"access\":\"Allow\",\"priority\":100,\"direction\":\"Outbound\"}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-sql\",\"properties\":{\"description\":\"Required for workers communication with Azure SQL services.\",\"protocol\":\"Tcp\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"3306\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"Sql\",\"access\":\"Allow\",\"priority\":101,\"direction\":\"Outbound\"}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-storage\",\"properties\":{\"description\":\"Required for workers communication with Azure Storage services.\",\"protocol\":\"Tcp\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"443\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"Storage\",\"access\":\"Allow\",\"priority\":102,\"direction\":\"Outbound\"}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-worker-outbound\",\"properties\":{\"description\":\"Required for worker nodes communication within a cluster.\",\"protocol\":\"*\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"*\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"VirtualNetwork\",\"access\":\"Allow\",\"priority\":103,\"direction\":\"Outbound\"}},{\"name\":\"Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-eventhub\",\"properties\":{\"description\":\"Required for worker communication with Azure Eventhub services.\",\"protocol\":\"Tcp\",\"sourcePortRange\":\"*\",\"destinationPortRange\":\"9093\",\"sourceAddressPrefix\":\"VirtualNetwork\",\"destinationAddressPrefix\":\"EventHub\",\"access\":\"Allow\",\"priority\":104,\"direction\":\"Outbound\"}}]}}"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft.Network",
+      "value": "Microsoft.Network"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Network/networkSecurityGroups",
+      "value": "Microsoft.Network/networkSecurityGroups"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:04:30+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Resources/deployments/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "9bbd6532-6c0f-413a-a59b-be039df50a81",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:09.874506+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "4c99c20a-def5-11ed-89e4-18c04d6827ae",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi/events/9bbd6532-6c0f-413a-a59b-be039df50a81/ticks/638175348698745062",
+    "level": "Informational",
+    "operationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "operationName": {
+      "localizedValue": "Create Deployment",
+      "value": "Microsoft.Resources/deployments/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Resources/deployments/write",
+      "serviceRequestId": null,
+      "statusCode": "Created"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Resources",
+      "value": "Microsoft.Resources"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Resources/deployments",
+      "value": "Microsoft.Resources/deployments"
+    },
+    "status": {
+      "localizedValue": "Accepted",
+      "value": "Accepted"
+    },
+    "subStatus": {
+      "localizedValue": "Created (HTTP Status Code: 201)",
+      "value": "Created"
+    },
+    "submissionTimestamp": "2023-04-19T21:03:24+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Resources/deployments/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "description": "",
+    "eventDataId": "3bf747bc-0db1-427d-909c-042b41bf6705",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:08.686952+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "4c99c20a-def5-11ed-89e4-18c04d6827ae",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi/events/3bf747bc-0db1-427d-909c-042b41bf6705/ticks/638175348686869527",
+    "level": "Informational",
+    "operationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "operationName": {
+      "localizedValue": "Create Deployment",
+      "value": "Microsoft.Resources/deployments/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Resources/deployments/write"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Resources",
+      "value": "Microsoft.Resources"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Resources/deployments",
+      "value": "Microsoft.Resources/deployments"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:03:24+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Resources/deployments/validate/action",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "1944e18f-ee82-45fa-836a-fe26473467c0",
+    "description": "",
+    "eventDataId": "ffe68a22-ba48-4ee1-932b-4a2e9c7aa676",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:08.608826+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "4c99c20a-def5-11ed-89e4-18c04d6827ae",
+      "method": "POST",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi/events/ffe68a22-ba48-4ee1-932b-4a2e9c7aa676/ticks/638175348686088265",
+    "level": "Informational",
+    "operationId": "1944e18f-ee82-45fa-836a-fe26473467c0",
+    "operationName": {
+      "localizedValue": "Validate Deployment",
+      "value": "Microsoft.Resources/deployments/validate/action"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Resources/deployments/validate/action",
+      "serviceRequestId": null,
+      "statusCode": "OK"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Resources",
+      "value": "Microsoft.Resources"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Resources/deployments",
+      "value": "Microsoft.Resources/deployments"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "OK (HTTP Status Code: 200)",
+      "value": "OK"
+    },
+    "submissionTimestamp": "2023-04-19T21:03:24+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Resources/deployments/validate/action",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "1944e18f-ee82-45fa-836a-fe26473467c0",
+    "description": "",
+    "eventDataId": "d75e8989-8c4d-4a49-878f-8b198549f349",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:07.421306+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "4c99c20a-def5-11ed-89e4-18c04d6827ae",
+      "method": "POST",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi/events/d75e8989-8c4d-4a49-878f-8b198549f349/ticks/638175348674213067",
+    "level": "Informational",
+    "operationId": "1944e18f-ee82-45fa-836a-fe26473467c0",
+    "operationName": {
+      "localizedValue": "Validate Deployment",
+      "value": "Microsoft.Resources/deployments/validate/action"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Resources/deployments/validate/action"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Resources",
+      "value": "Microsoft.Resources"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Resources/deployments",
+      "value": "Microsoft.Resources/deployments"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:03:24+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Resources/subscriptions/resourcegroups/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "4ba31c93-2421-4246-9a33-124a58ada95b",
+    "description": "",
+    "eventDataId": "299c90cd-293c-4018-acb9-92c3fddc9e00",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:03.639993+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "4b4851aa-def5-11ed-abf4-18c04d6827ae",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/events/299c90cd-293c-4018-acb9-92c3fddc9e00/ticks/638175348636399939",
+    "level": "Informational",
+    "operationId": "4ba31c93-2421-4246-9a33-124a58ada95b",
+    "operationName": {
+      "localizedValue": "Update resource group",
+      "value": "Microsoft.Resources/subscriptions/resourcegroups/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Resources/subscriptions/resourcegroups/write",
+      "responseBody": "{\"id\":\"/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi\",\"name\":\"rg-tmp-zmmbsj-bmi\",\"type\":\"Microsoft.Resources/resourceGroups\",\"location\":\"westeurope\",\"properties\":{\"provisioningState\":\"Succeeded\"}}",
+      "serviceRequestId": null,
+      "statusCode": "Created"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Resources",
+      "value": "Microsoft.Resources"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Resources/subscriptions/resourcegroups",
+      "value": "Microsoft.Resources/subscriptions/resourcegroups"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "Created (HTTP Status Code: 201)",
+      "value": "Created"
+    },
+    "submissionTimestamp": "2023-04-19T21:03:13+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Resources/subscriptions/resourcegroups/write",
+      "role": null,
+      "scope": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi"
+    },
+    "caller": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "channels": "Operation",
+    "claims": {
+      "aio": "AVQAq/8TAAAAUlK8eO9LzlLRNGAHi3cImAxTCDGvEakGwk5RdPaCdkrjrtDvwx0f9CRHV1I3oqmXkLVcmed94sc6TjysjaCd7ftRbX+rGn1br4WtxtfBILo=",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1681941301",
+      "groups": "9f57ea98-0c88-48c7-9362-c94016787cfe",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "592c29b0-e2ed-4656-af38-76bead917dfd",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "b19aa337-2a37-4e61-8347-6e68d85c6fe4",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "a5ZtXoVzrbd9s3uuUs4nqVrLJJDov-oLbnXpKoDUJ7Q",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "iwan.aucamp@iwanaucampoutlook.onmicrosoft.com",
+      "iat": "1681936558",
+      "ipaddr": "80.213.187.77",
+      "iss": "https://sts.windows.net/b19aa337-2a37-4e61-8347-6e68d85c6fe4/",
+      "name": "Iwan Aucamp",
+      "nbf": "1681936558",
+      "puid": "10032002746FA333",
+      "rh": "0.AUsAN6OasTcqYU6DR25o2Fxv5EZIf3kAutdPukPawfj2MBNLADE.",
+      "uti": "mYh4tFT5EU2lvZpL2GNgAA",
+      "ver": "1.0",
+      "wids": "62e90394-69f5-4237-9190-012177145e10,b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_cc": "CP1",
+      "xms_tcdt": "1676127907"
+    },
+    "correlationId": "4ba31c93-2421-4246-9a33-124a58ada95b",
+    "description": "",
+    "eventDataId": "fcda4dff-6981-4636-90b7-b70fb33099b9",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2023-04-19T21:01:03.233799+00:00",
+    "httpRequest": {
+      "clientIpAddress": "80.213.187.77",
+      "clientRequestId": "4b4851aa-def5-11ed-abf4-18c04d6827ae",
+      "method": "PUT",
+      "uri": null
+    },
+    "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi/events/fcda4dff-6981-4636-90b7-b70fb33099b9/ticks/638175348632337999",
+    "level": "Informational",
+    "operationId": "4ba31c93-2421-4246-9a33-124a58ada95b",
+    "operationName": {
+      "localizedValue": "Update resource group",
+      "value": "Microsoft.Resources/subscriptions/resourcegroups/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi",
+      "eventCategory": "Administrative",
+      "hierarchy": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+      "message": "Microsoft.Resources/subscriptions/resourcegroups/write",
+      "requestbody": "{\"location\":\"westeurope\"}"
+    },
+    "resourceGroup": "rg-tmp-zmmbsj-bmi",
+    "resourceGroupName": "rg-tmp-zmmbsj-bmi",
+    "resourceId": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourcegroups/rg-tmp-zmmbsj-bmi",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Resources",
+      "value": "Microsoft.Resources"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Resources/subscriptions/resourcegroups",
+      "value": "Microsoft.Resources/subscriptions/resourcegroups"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2023-04-19T21:03:13+00:00",
+    "subscriptionId": "e64fccb4-b9c0-4a7d-954d-c9103b46976e",
+    "tenantId": "b19aa337-2a37-4e61-8347-6e68d85c6fe4"
+  }
+]

@@ -1,0 +1,83 @@
++ : westeurope
++ : rg-tmp-zmmbsj-bmc
++ : dbws-zmmbsj-bmc
+++ az group exists --name rg-tmp-zmmbsj-bmc
++ false
++ az group create --location westeurope --name rg-tmp-zmmbsj-bmc
+{
+  "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmc",
+  "location": "westeurope",
+  "managedBy": null,
+  "name": "rg-tmp-zmmbsj-bmc",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
++ BICEP_PARAMETERS=("--parameters" "workspaceName=${DATABRICKS_WORKSPACE_NAME}")
++ az bicep version
+Bicep CLI version 0.16.2 (de7fdd2b33)
+
++ timeout 10m az deployment group create --template-file main.bicep --parameters workspaceName=dbws-zmmbsj-bmc --resource-group rg-tmp-zmmbsj-bmc --name rg-tmp-zmmbsj-bmc --mode Complete --verbose
+WARNING: /home/iwana/sw/d/github.com/aucampia/issue-20230419-databricks_vnet_inject_bicep_loop/main.bicep(191,5) : Warning use-resource-id-functions: If property "managedResourceGroupId" represents a resource ID, it must use a symbolic resource reference, be a parameter or start with one of these functions: extensionResourceId, guid, if, reference, resourceId, subscription, subscriptionResourceId, tenantResourceId. Found nonconforming expression at managedResourceGroupId -> managedResourceGroupId [https://aka.ms/bicep/linter/use-resource-id-functions]
+
+
+real	10m0.001s
+user	0m0.000s
+sys	0m0.011s
++ :
++ az monitor activity-log list --resource-group rg-tmp-zmmbsj-bmc --output json
++ tee activity-log-mode-Complete.json
++ jq -r '.[] | [ .eventTimestamp, .operationName.localizedValue, .status.localizedValue ] | @tsv'
++ sort
+2023-04-19T21:01:21.992424+00:00	Create or Update Network Security Group	Started
+2023-04-19T21:01:23.461357+00:00	Create or Update Network Security Group	Accepted
+2023-04-19T21:01:24.436510+00:00	Create or Update Virtual Network	Started
+2023-04-19T21:01:25.389632+00:00	'auditIfNotExists' Policy action.	Started
+2023-04-19T21:01:25.514644+00:00	Create or Update Virtual Network	Accepted
+2023-04-19T21:01:27.439600+00:00	Create Databricks Workspace	Started
+2023-04-19T21:01:27.600939+00:00	Create or Update Network Security Group	Succeeded
+2023-04-19T21:01:28.413399+00:00	Create or Update Virtual Network	Succeeded
+2023-04-19T21:01:28.705311+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:01:44.066705+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:01:59.728877+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:02:03.089286+00:00	Prepares a subnet by applying necessary Network Policies	Started
+2023-04-19T21:02:03.198662+00:00	Prepares a subnet by applying necessary Network Policies	Accepted
+2023-04-19T21:02:04.555372+00:00	Create or Update Network Intent Policy	Started
+2023-04-19T21:02:04.836632+00:00	Create or Update Network Intent Policy	Succeeded
+2023-04-19T21:02:06.600012+00:00	Prepares a subnet by applying necessary Network Policies	Succeeded
+2023-04-19T21:02:13.428204+00:00	Prepares a subnet by applying necessary Network Policies	Started
+2023-04-19T21:02:13.600082+00:00	Prepares a subnet by applying necessary Network Policies	Accepted
+2023-04-19T21:02:13.805450+00:00	Create or Update Network Intent Policy	Started
+2023-04-19T21:02:14.149201+00:00	Create or Update Network Intent Policy	Succeeded
+2023-04-19T21:02:15.694351+00:00	Prepares a subnet by applying necessary Network Policies	Succeeded
+2023-04-19T21:02:15.826505+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:02:31.978883+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:02:47.306955+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:03:02.688610+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:03:18.220054+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:03:24.310917+00:00	Create or Update Network Security Group	Succeeded
+2023-04-19T21:03:27.555083+00:00	Create or Update Virtual Network	Succeeded
+2023-04-19T21:03:33.525393+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:03:48.961859+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:04:04.701367+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:04:06.902336+00:00	Initialize Databricks workspace	Started
+2023-04-19T21:04:18.402339+00:00	Initialize Databricks workspace	Succeeded
+2023-04-19T21:04:20.514171+00:00	Delete Network Intent Policy	Started
+2023-04-19T21:04:20.514171+00:00	Delete Network Intent Policy	Started
+2023-04-19T21:04:20.873550+00:00	Delete Network Intent Policy	Failed
+2023-04-19T21:04:21.139176+00:00	Delete Network Intent Policy	Failed
+2023-04-19T21:04:30.650779+00:00	Create Databricks Workspace	Succeeded
+2023-04-19T21:04:51.305556+00:00	Delete Network Intent Policy	Started
+2023-04-19T21:04:51.336799+00:00	Delete Network Intent Policy	Started
+2023-04-19T21:04:51.743054+00:00	Delete Network Intent Policy	Failed
+2023-04-19T21:04:52.071185+00:00	Delete Network Intent Policy	Failed
+2023-04-19T21:05:51.894793+00:00	Delete Network Intent Policy	Started
+2023-04-19T21:05:52.301018+00:00	Delete Network Intent Policy	Started
+2023-04-19T21:05:52.441707+00:00	Delete Network Intent Policy	Failed
+2023-04-19T21:05:52.926106+00:00	Delete Network Intent Policy	Failed
+2023-04-19T21:07:22.651993+00:00	Delete Network Intent Policy	Started
+2023-04-19T21:07:23.402003+00:00	Delete Network Intent Policy	Failed
+2023-04-19T21:07:23.781610+00:00	Delete Network Intent Policy	Started
+2023-04-19T21:07:24.187993+00:00	Delete Network Intent Policy	Failed

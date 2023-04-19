@@ -1,0 +1,230 @@
++ : westeurope
++ : rg-tmp-zmmbsj-bmi
++ : dbws-zmmbsj-bmi
+++ az group exists --name rg-tmp-zmmbsj-bmi
++ false
++ az group create --location westeurope --name rg-tmp-zmmbsj-bmi
+{
+  "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi",
+  "location": "westeurope",
+  "managedBy": null,
+  "name": "rg-tmp-zmmbsj-bmi",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
++ BICEP_PARAMETERS=("--parameters" "workspaceName=${DATABRICKS_WORKSPACE_NAME}")
++ az bicep version
+Bicep CLI version 0.16.2 (de7fdd2b33)
+
++ timeout 10m az deployment group create --template-file main.bicep --parameters workspaceName=dbws-zmmbsj-bmi --resource-group rg-tmp-zmmbsj-bmi --name rg-tmp-zmmbsj-bmi --mode Incremental --verbose
+WARNING: /home/iwana/sw/d/github.com/aucampia/issue-20230419-databricks_vnet_inject_bicep_loop/main.bicep(191,5) : Warning use-resource-id-functions: If property "managedResourceGroupId" represents a resource ID, it must use a symbolic resource reference, be a parameter or start with one of these functions: extensionResourceId, guid, if, reference, resourceId, subscription, subscriptionResourceId, tenantResourceId. Found nonconforming expression at managedResourceGroupId -> managedResourceGroupId [https://aka.ms/bicep/linter/use-resource-id-functions]
+
+INFO: Command ran in 216.069 seconds (init: 0.123, invoke: 215.946)
+{
+  "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Resources/deployments/rg-tmp-zmmbsj-bmi",
+  "location": null,
+  "name": "rg-tmp-zmmbsj-bmi",
+  "properties": {
+    "correlationId": "f993ced1-607d-4551-aa8f-18d6965b1b0f",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg",
+            "resourceGroup": "rg-tmp-zmmbsj-bmi",
+            "resourceName": "databricks-nsg",
+            "resourceType": "Microsoft.Network/networkSecurityGroups"
+          }
+        ],
+        "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet",
+        "resourceGroup": "rg-tmp-zmmbsj-bmi",
+        "resourceName": "databricks-vnet",
+        "resourceType": "Microsoft.Network/virtualNetworks"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet",
+            "resourceGroup": "rg-tmp-zmmbsj-bmi",
+            "resourceName": "databricks-vnet",
+            "resourceType": "Microsoft.Network/virtualNetworks"
+          }
+        ],
+        "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+        "resourceGroup": "rg-tmp-zmmbsj-bmi",
+        "resourceName": "dbws-zmmbsj-bmi",
+        "resourceType": "Microsoft.Databricks/workspaces"
+      }
+    ],
+    "duration": "PT3M3.7526497S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Databricks/workspaces/dbws-zmmbsj-bmi",
+        "resourceGroup": "rg-tmp-zmmbsj-bmi"
+      },
+      {
+        "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/networkSecurityGroups/databricks-nsg",
+        "resourceGroup": "rg-tmp-zmmbsj-bmi"
+      },
+      {
+        "id": "/subscriptions/e64fccb4-b9c0-4a7d-954d-c9103b46976e/resourceGroups/rg-tmp-zmmbsj-bmi/providers/Microsoft.Network/virtualNetworks/databricks-vnet",
+        "resourceGroup": "rg-tmp-zmmbsj-bmi"
+      }
+    ],
+    "outputs": null,
+    "parameters": {
+      "disablePublicIp": {
+        "type": "Bool",
+        "value": false
+      },
+      "location": {
+        "type": "String",
+        "value": "westeurope"
+      },
+      "nsgName": {
+        "type": "String",
+        "value": "databricks-nsg"
+      },
+      "pricingTier": {
+        "type": "String",
+        "value": "premium"
+      },
+      "privateSubnetCidr": {
+        "type": "String",
+        "value": "10.179.0.0/18"
+      },
+      "privateSubnetName": {
+        "type": "String",
+        "value": "private-subnet"
+      },
+      "publicSubnetCidr": {
+        "type": "String",
+        "value": "10.179.64.0/18"
+      },
+      "publicSubnetName": {
+        "type": "String",
+        "value": "public-subnet"
+      },
+      "vnetCidr": {
+        "type": "String",
+        "value": "10.179.0.0/16"
+      },
+      "vnetName": {
+        "type": "String",
+        "value": "databricks-vnet"
+      },
+      "workspaceName": {
+        "type": "String",
+        "value": "dbws-zmmbsj-bmi"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Network",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "westeurope"
+            ],
+            "properties": null,
+            "resourceType": "networkSecurityGroups",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "westeurope"
+            ],
+            "properties": null,
+            "resourceType": "virtualNetworks",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Databricks",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "westeurope"
+            ],
+            "properties": null,
+            "resourceType": "workspaces",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "13840198638106314204",
+    "templateLink": null,
+    "timestamp": "2023-04-19T21:04:13.365893+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "rg-tmp-zmmbsj-bmi",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
+
+real	3m36.185s
+user	0m2.186s
+sys	0m0.261s
++ az monitor activity-log list --resource-group rg-tmp-zmmbsj-bmi --output json
++ tee activity-log-mode-Incremental.json
++ jq -r '.[] | [ .eventTimestamp, .operationName.localizedValue, .status.localizedValue ] | @tsv'
++ sort
+2023-04-19T21:01:03.233799+00:00	Update resource group	Started
+2023-04-19T21:01:03.639993+00:00	Update resource group	Succeeded
+2023-04-19T21:01:07.421306+00:00	Validate Deployment	Started
+2023-04-19T21:01:08.608826+00:00	Validate Deployment	Succeeded
+2023-04-19T21:01:08.686952+00:00	Create Deployment	Started
+2023-04-19T21:01:09.874506+00:00	Create Deployment	Accepted
+2023-04-19T21:01:10.616905+00:00	Create or Update Network Security Group	Started
+2023-04-19T21:01:12.038869+00:00	Create or Update Network Security Group	Accepted
+2023-04-19T21:01:13.076593+00:00	Create or Update Network Security Group	Succeeded
+2023-04-19T21:01:17.525123+00:00	Create Databricks Workspace	Started
+2023-04-19T21:01:18.542768+00:00	Create or Update Virtual Network	Succeeded
+2023-04-19T21:01:19.181462+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:01:35.273537+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:01:50.690902+00:00	Create Databricks Workspace	Accepted
+2023-04-19T21:01:53.250916+00:00	Prepares a subnet by applying necessary Network Policies	Started
+2023-04-19T21:01:53.391540+00:00	Prepares a subnet by applying necessary Network Policies	Accepted
+2023-04-19T21:01:55.852171+00:00	Create or Update Network Intent Policy	Started
+2023-04-19T21:01:56.274051+00:00	Create or Update Network Intent Policy	Succeeded
+2023-04-19T21:02:03.802314+00:00	Prepares a subnet by applying necessary Network Policies	Started
+2023-04-19T21:02:03.958567+00:00	Prepares a subnet by applying necessary Network Policies	Accepted
+2023-04-19T21:02:04.870846+00:00	Create or Update Network Intent Policy	Started
+2023-04-19T21:02:05.480225+00:00	Create or Update Network Intent Policy	Succeeded
